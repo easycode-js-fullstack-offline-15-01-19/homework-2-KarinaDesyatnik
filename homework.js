@@ -130,8 +130,7 @@ switch (display) {
 
 //1. Если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 let block = 'hidden';
-block === 'hidden' ? block = 'visible'
-    : block = 'hidden';
+block = block === 'hidden' ? 'visible' : 'hidden';
 // 2.  Записать условие:
 //  если переменная равна нулю, присвоить ей 1;
 // если меньше нуля - строку “less then zero”;
